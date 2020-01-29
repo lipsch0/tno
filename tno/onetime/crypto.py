@@ -71,4 +71,4 @@ def decrypt(iv, key, associated_data, tag, ciphertext):
     # Decryption gets us the authenticated plaintext.
     # If the tag does not match an InvalidTag exception will be raised.
     return (decryptor.update(ciphertext)
-            + decryptor.finalize()).decode('utf-8')
+            + decryptor.finalize()).decode('utf-8') 
